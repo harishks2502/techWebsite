@@ -169,7 +169,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .top-container {
     grid-template-areas:
       "showcase showcase"
@@ -180,7 +180,7 @@ footer {
     font-size: 2.5rem;
   }
 
-  .main-nav {
+  .main-nav ul {
     grid-template-columns: 1fr;
   }
 
@@ -192,5 +192,14 @@ footer {
     display: block;
     text-align: center;
     margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
   }
 }
